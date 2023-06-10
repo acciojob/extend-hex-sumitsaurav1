@@ -1,9 +1,17 @@
 const extendHex = (shortHex) => {
     // write your code here
     let result = "#";
-    for(let i=1;i<shortHex.length;i++){
-        result +=shortHex[i];
-        result +=shortHex[i];
+    if(shortHex[0]=="#")
+    {
+        for(let i=1;i<shortHex.length;i++){
+            result +=shortHex[i];
+            result +=shortHex[i];
+        }
+    }else{
+        for(let i=0;i<shortHex.length;i++){
+            result +=shortHex[i];
+            result +=shortHex[i];
+        }
     }
     return result;
 
